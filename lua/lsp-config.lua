@@ -34,12 +34,22 @@
     end
   end
 
-  local servers = {'solargraph'}
-  for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup {
-      on_attach = on_attach,
+  nvim_lsp.solargraph.setup {
+    on_attach = on_attach,
+    filetypes = {"ruby", "rakefile"},
+    root_dir = nvim_lsp.util.root_pattern("Gemfile", ".git", "."),
+    settings = {
+      solargraph = {
+        autoformat = true,
+        completion = true,
+        diagnostic = true,
+        folding = true,
+        references = true,
+        rename = true,
+        symbols = true
+      }
     }
-  end
+  }
 
   require'nvim-treesitter.configs'.setup {
     highlight = {

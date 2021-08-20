@@ -22,5 +22,9 @@ return require('packer').startup(function()
   use 'hrsh7th/vim-vsnip'
   use 'glepnir/zephyr-nvim'
   use 'nvim-treesitter/nvim-treesitter'
+  -- use 'glepnir/lspsaga.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 end)
-

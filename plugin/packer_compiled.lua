@@ -96,6 +96,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["zephyr-nvim"] = {
+    loaded = true,
+    path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/zephyr-nvim"
   }
 }
 
