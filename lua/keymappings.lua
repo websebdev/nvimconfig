@@ -4,12 +4,12 @@ local set_keymap = vim.api.nvim_set_keymap
 
 set_keymap('n', '<Space>', '<NOP>', { noremap = true, silent = true})
 set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true, silent = true})
-set_keymap('n', '<Leader>b', ':NvimTreeToggle<CR>', { noremap = true, silent = true})
+set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true})
 
 -- better window movement
 set_keymap('n', '<C-h>', '<C-w>h', { silent = true })
 set_keymap('n', '<C-j>', '<C-w>j', { silent = true })
-set_keymap('n', '<C-k>', '<C-w>k', { silent = true })
+set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
 set_keymap('n', '<C-l>', '<C-w>l', { silent = true })
 
 -- easy indentation in visual mode
@@ -31,4 +31,10 @@ set_keymap('n', '<Leader>fg', ':Telescope live_grep<CR>', { noremap = true, sile
 set_keymap('n', '<Leader>fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
 set_keymap('n', '<Leader>fh', ':Telescope help_tags<CR>', { noremap = true, silent = true })
 
+-- Copy current path to clipboard
+set_keymap('n', '<Leader>crp', ':let @+ = expand("%")<CR>', { noremap = true, silent = true })
+set_keymap('n', '<Leader>cfp', ':let @+ = expand("%:p")<CR>', { noremap = true, silent = true })
+set_keymap('n', '<Leader>cfn', ':let @+ = expand("%:t")<CR>', { noremap = true, silent = true })
+
 -- print(vim.inspect(vim.g.mapleader))
+

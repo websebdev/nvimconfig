@@ -25,6 +25,8 @@ return require('packer').startup(function()
   -- use 'glepnir/lspsaga.nvim'
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { {'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-fzy-native.nvim'} }
+    -- requires = { {'nvim-lua/plenary.nvim', 'BurntSushi/ripgrep', 'nvim-telescope/fzy-native.nvim'} }
   }
+  use 'kdheepak/lazygit.nvim'
 end)

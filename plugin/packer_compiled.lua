@@ -69,6 +69,14 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["fzy-native.nvim"] = {
+    loaded = true,
+    path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/fzy-native.nvim"
+  },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/lazygit.nvim"
+  },
   ["nvim-compe"] = {
     loaded = true,
     path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/nvim-compe"
@@ -92,6 +100,14 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/sebastienauriault/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,
